@@ -1,0 +1,139 @@
+body {
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    border-bottom: 1px solid #F7C437;
+    padding-left: 8rem;
+}
+
+nav h1{
+    display: flex;
+    align-items: center;
+    padding: 0 8rem;
+    margin: 0;
+    font-size: 24px;
+    line-height: 1;
+    transform: translateY(-3px);
+}
+
+nav a {
+    color: #F7C437;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 1;
+}
+
+#card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; 
+    justify-items: center;             
+    align-items: center;
+    margin : 0 15%;
+    padding-top: 30px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 500px;
+    min-width: 200px;
+    height: auto;
+    text-decoration: none;
+    border: 0.1px solid #F7C437;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    #card-container {
+      grid-template-columns: 1fr;
+      margin: 0 5%;
+    }
+  }
+  
+
+.card:hover {
+    border: 3px solid #F7C437;
+}
+
+.card-image img {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 20px;
+}
+
+
+.card-text {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    margin-left: 20px;
+    flex-direction: column;
+    line-height: 0.4;
+    margin-bottom: 15px;
+}
+
+.card-text h2{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.card-text p {
+    font-size: 16px;
+    color: #BBBBBB;
+    margin-bottom: 0.2rem;
+    transform: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.img-container img{ /*그냥 컨테이너로 하면 안됨!!!*/
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;   
+    border: 1px solid #F7C437;
+    margin-bottom: 2rem;
+}
+
+
+main table {
+    border-radius: 10px;   
+    border: 1px solid #F7C437;
+    padding : 20px;
+    line-height: 2.5;
+    border-spacing: 0;
+}
+
+
+td {
+    border-bottom: 1px solid #F7C437;
+}
+
+main td:first-child {
+    color: white;
+    font-weight: bold;
+}
+
+main td:last-child {
+    color: #BBBBBB;
+    text-align: right;
+}
+
+tr:last-child td {
+    border-bottom: none;
+  }
+  
